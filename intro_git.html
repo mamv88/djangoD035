@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduçao ao GIT</title>
+    <style>
+    body {
+        background-color: rgba(red, rgb(187, 176, 15), blue, alpha);
+    }   
+    code{color:blue; font-weight: bold;}
+    a {color: darkolivegreen; text-decoration:none; font-weight:bold;
+        text-transform: capitalize;}
+    a :hover {text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <h1>GIT</h1>
+    <p>
+        Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+    </p>
+    <ul>
+    <li>sistema de controlo de versões</li>
+    <li>gratuito;</li>
+    <li>open source</li>
+    </ul>
+    <p>comando para ver se temos instalado e qual a versão: <code> git --version</code> </p>
+    <p>para iniciar um repositorio local: <code> git init</code></p>
+    <p>para consultar o status do ficheiros: <code> git status</code></p>
+    <p>para adicionar ficheiro ao staging area/area de preparaçao: <code> git add intro_git.html</code></p>
+    <p> para inicializar:<code>git commit -m "commit inicial"</code></p>
+    <p>  para adicionar todos os ficheiros: <code>git add .</code></p>
+    <p>quand for para guardar uma versão do programa / fazer commit /efetuar snapshot: <code> git commit -m "pequna descriçao"</code></p>
+    <img src="img/staging area.png" width = "500" style="display:block;margin:auto">
+    <br>
+    <p>para ver o historico de commits: <code>git log</code></p>
+    <p>para ver o historico de commits com grafico: <code>git log --graph</code></p>
+    <p>para ver o historico de commits numa só linha: <code>git log --oneline</code></p>
+    <h2>Ramificação do código</h2>
+    <p> criar um ramo novo: <code>git branch nome</code></p>
+    <p> mudar de  ramo : <code>git switch 'nome'</code></p>
+    <p>fazer o add e o commit com as novas alteraçoes no novo ramo</p>
+    <p> merge como o do outro branch : <code>git merge nome</code></p>
+    <p> eliminar ramo:<code>git branch -d nome</code></p>
+    <p> ver diferencas entre versoes<code>git diff</code></p>
+    <img src="img/git_branch.svg" width = "600">
+    <br>
+        <h2>Recursos:</h2>
+        <a href="files/progit.pdf">livro Apress -PRO GIT</a>
+        <br>
+        <a href="files/github-git-cheat-sheet.pdf">github cheat sheet</a>
+        <br><br>
+    <h2>Outros comandos</h2>
+    <p> para voltar atras, remover um ficheiro que foi adicionado<code>git restore --staged nome</code></p>  
+    </body>
+</html> 
